@@ -10,7 +10,7 @@ body {
   display:flex;
   justify-content:center;
   align-items:center;
-  color:#10214e;
+  color:#102253;
 }
 
 article {
@@ -22,7 +22,7 @@ article {
   align-items:center;
   justify-content:flex-end;
 
-  background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
+  background: linear-gradient(0deg, rgb(67, 97, 104) 40%, #4e54c8 100%);
   box-shadow:0 0 20px 20px rgba(0,0,0,.1);
   border-radius:1rem;
   position: relative;
@@ -39,7 +39,7 @@ header {
 }
 h1 {
   margin:2rem 0 1rem;
-  color: rgba(0,239,255,1);
+  color: rgb(47, 61, 78);
 }
 button {
   border:none;
@@ -60,6 +60,10 @@ button:focus {
 }
 button:focus svg {
   stroke: rgba(0,239,255,1);
+}
+
+button:hover{
+  transform: scale(1.1);
 }
 
 svg {
@@ -87,7 +91,7 @@ img {
 }
 dl {
   width:100%;
-  background: rgb(255,255,255);
+  background: rgb(36, 33, 33);
   
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -104,10 +108,21 @@ dl {
 }
 dt{
   font-weight: bold;
-  border-top: 1px solid rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  color: aliceblue;
   padding-top: .25rem;
   margin-top: .25rem;
+  transition: 1.5s;
 }
+
+dt:hover{
+  color: coral;
+  transform: scale(1.5); 
+
+  
+}
+
+
 dt:nth-of-type(1){ grid-area: html-dt; }
 dt:nth-of-type(2){ grid-area: css-dt; transform: translateY(1rem);}
 dt:nth-of-type(3){ grid-area: js-dt; }
@@ -123,19 +138,27 @@ dd:nth-of-type(2){
 
 p { 
   margin:0;
+  color: #91c6df;
 
 }
  
-#titel{
+.titel{
   background-color: white;
   padding: 5px 20px 5px 20px;
   border-radius: 20px;
+  color: #102253;
+  transition: 1.5s;
+}
+
+.titel:hover{
+  transform: scale(1.2) skew(5deg, 5deg);
+
 }
 
 article > p {
   padding:3rem 2rem;
   margin-top: 0;
-  background:rgba(255,255,255, 0.5);
+  background:rgba(0, 0, 0, 0.5);
   text-align:center;
   border-radius: 0 0 1rem 1rem;
   width:100%;
@@ -163,3 +186,17 @@ body.expand dd {
 body.expand img {
   width:15em;
 }
+
+body.expand h1 {
+ color: aliceblue;
+ transition: 1.5s;
+}
+.text{
+  color: aliceblue;
+  transition: 1.5s;
+}
+
+.text:hover{
+  color: coral; 
+}
+
